@@ -52,6 +52,7 @@ def display_to_terminal(posts_info, display_color):
     for filename in file_list:
         img_path = './images/' + filename
         if display_color:
+            
             draw_with_color(img_path, posts_info[filename])
             time.sleep(2)
         else:
